@@ -12,8 +12,14 @@
     支持定制显示进程id,线程id
 
     进程锁用文件锁实现
+
+编译：
+    编译时要用到我的另一个基础库lxlib。编译时要先下载下来。
+    ./build.sh
+    cd test
+    ./test -h 查看用法
     
-测试程序用法：    
+测试程序用法：
     usage:test [-p process_num] [-t thread_num] [-n looptimes]  [-f] [-m]
     -p 指定测试的并发进程数
     -t 指定并发的线程数
