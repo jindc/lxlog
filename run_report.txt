@@ -1,0 +1,38 @@
+lxlog is a process safe and thread safe log.
+
+./test -h
+
+$ time ./test -n 1000000 -m -f
+program run 0 day,0 hour,0 min,5 second,843 milli,458 usec
+
+real    0m5.844s
+user    0m3.140s
+sys     0m2.705s
+
+$ time ./test -n 1000000 -f   
+program run 0 day,0 hour,0 min,6 second,330 milli,339 usec
+
+real    0m6.331s
+user    0m3.061s
+sys     0m3.270s
+
+$ time ./test -n 1000000
+program run 0 day,0 hour,0 min,7 second,479 milli,30 usec
+
+real    0m7.480s
+user    0m2.865s
+sys     0m4.611s
+
+$ time ./test -n 100000 -t 10
+program run 0 day,0 hour,0 min,8 second,61 milli,167 usec
+
+real    0m8.062s
+user    0m7.152s
+sys     0m15.831s
+
+$ time ./test -n 10000 -p 10 -t 10 
+program run 0 day,0 hour,0 min,43 second,877 milli,372 usec
+
+real    0m43.878s
+user    0m9.137s
+sys     2m15.865s
