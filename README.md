@@ -14,7 +14,7 @@
     进程锁用文件锁实现
 
 编译：
-    编译时要用到我的另一个基础库lxlib。编译时要先下载下来。
+    编译时要用到我的另一个基础库lxlib。编译时要先下载下来 https://github.com/jindc/lxlib.git。
     ./build.sh
     cd test
     ./test -h 查看用法
